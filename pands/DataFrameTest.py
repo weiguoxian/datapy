@@ -7,3 +7,4 @@ print gp
 dict_gdp={"GDP":[30133, 28000, 22286, 21500],"Population":[2419.76, 2172.90, 1350.11, 1137.52]}
 print pd.DataFrame.from_dict(dict_gdp)
 print pd.DataFrame.from_dict(dict_gdp, orient="index")
+print pd.read_csv("d:/datapy/datapy/pands/gdp-population.csv", names=["CITY", "GDP", "POP"], skiprows=[0], index_col=0)
